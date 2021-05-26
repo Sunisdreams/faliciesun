@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orienta&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Falicie</title>
+  </head>
+  <body>
+    <div id="upper"></div>
+    <header>
+      <img src="./assets/images/logo.png" alt="" />
+      <nav id="menu">
+        <a href="#procedure">Процедури</a>
+        <a href="#pricelist">Прайс</a>
+        <a href="#about">Про нас</a>
+      </nav>
+      <div onclick="{toggle()}" class="Burger">
+        <div id="lineUpper"></div>
+        <div id="lineMedium"></div>
+        <div id="lineLower"></div>
+      </div>
+    </header>
+    <div id="upper"></div>
+    <div class="main">
+      <img id="falicie" src="./assets/images/Falicie.png" alt="" />
+      <button onclick="{toggleFeedback()}" class="FeedBackButton">FeedBack</button>
+    </div>
+    <div id="procedure" class="procedure">
+      <p class="procedureText">Топові процедури</p>
+      <div class="ProcedureItem">
+        <img src="./assets/images/Lips.png" alt="" />
+        <p>
+          Збільшення губ – це сучасний спосіб зробити зовнішність яскравішою і
+          наблизитися до власного ідеалу краси. Суть цього революційного
+          нехірургічного методу збільшення губ полягає у введенні ін’єкцій
+          препаратів, які містять гіалуронову кислоту. Така процедура є
+          максимально безпечною і простою, тому набирає все більшої
+          популярності.
+        </p>
+      </div>
+      <div class="ProcedureItem ProcedureItemCenter">
+        <p>
+          Ламінування брів – процедура, яка полягає в почерговому нанесенні на
+          волоски брів різних складів. Їх завдання – надати навіть самим
+          неслухняним волоскам правильний напрямок, зафіксувати акуратну форму
+          брів, затемнити брови (фарбування в більш виразний відтінок).
+        </p>
+        <img src="./assets/images/eyebrow.png" alt="" />
+      </div>
+      <div class="ProcedureItem">
+        <img src="./assets/images/eye.png" alt="" />
+        <p>
+          Нарощуванні вій — це сучасна процедура в косметології, яка дозволяє
+          значно збільшити довжину, об’єм вій, форму вій. За допомогою
+          нарощування вій можна досягнути ефекту більш виразного погляду, так
+          званого, лялькового погляду, та багато інших ефектів.
+        </p>
+      </div>
+    </div>
+    <div id="pricelist" class="PriceList">
+      <div class="Price">
+        <h2>Prices</h2>
+        <table class="styled-table" style="width: 60%">
+          <tr>
+            <th>Procedure</th>
+            <th>Price</th>
+          </tr>
+          <tr>
+            <td>Ламінування вій</td>
+            <td>600грн</td>
+          </tr>
+          <tr>
+            <td>Нарощування вій</td>
+            <td>1200грн</td>
+          </tr>
+          <tr>
+            <td>Брови татуаж</td>
+            <td>2800грн</td>
+          </tr>
+          <tr>
+            <td>Ламінування брів</td>
+            <td>400грн</td>
+          </tr>
+          <tr>
+            <td>Ін’єкцій в губи</td>
+            <td>від 1800грн</td>
+          </tr>
+        </table>
+      </div>
+      <div class="video-foreground">
+        <div class="VideoBackground"></div>
+        <video controls autoplay loop muted>
+          <source
+            src="./assets/video/Промо ролик салона красоты Celebrity.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+
+    <div id="about" class="AboutUs">
+      <p class="AboutUsMainText">Про нас</p>
+      <p class="AboutUsText">
+        Творча команда салону краси «Falicie» Секрет популярності салону
+        «Falicie» - дружна команда б'юті-фахівців. Вона постійно
+        вдосконалюється, щоб допомагати клієнтам із задоволенням перетворюватися
+        в улюблені образи і грати головні ролі. Тим, хто все ще знаходиться в
+        творчому пошуку, стилісти пропонують варіанти завершення «п'єси»,
+        додаючи відсутні деталі у вигляді гарних війок та пухких губ. Працюючи
+        над іміджем клієнтів, стилісти залишаються акторами «другого плану».
+        Вони мають майже магічною здатністю вгадувати навіть невисловлені
+        бажання клієнтів з витонченим смаком і можуть допомогти максимально
+        втілити їх, використовуючи кращі косметичні засоби і технологічні
+        новинки. Між членами творчої команди б'юті-салону існують дуже теплі
+        відносини. У такій майже сімейній атмосфері дуже легко мріяти і творити!
+      </p>
+    </div>
+    <div id="feedback" class="FeedBack">
+      <button onclick="toggleFeedback()">&#10006;</button>
+      <form action="">
+        <div><h1>FeedBack</h1></div>
+        <h2>Email</h2>
+        <input placeholder="Type your email" type="emeil" />
+        <h2>Message</h2>
+        <textarea
+          placeholder="Type your message"
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+        ></textarea>
+        <button>Send</button>
+      </form>
+    </div>
+    <footer>Falicie</footer>
+    <a class="UP" href="#upper">&#8682;</a>
+    <script>
+      const toggle = () => {
+        document
+          .getElementById("lineUpper")
+          .classList.toggle("lineUpperToggled");
+        document
+          .getElementById("lineMedium")
+          .classList.toggle("lineMediumToggled");
+        document
+          .getElementById("lineLower")
+          .classList.toggle("lineLowerToggled");
+        document.getElementById("menu").classList.toggle("Toggled");
+      };
+      const toggleFeedback = () => {
+        document.getElementById("feedback").classList.toggle("FeedBackToggled");
+      };
+    </script>
+  </body>
+</html>
